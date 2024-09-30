@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif !important;
+}
+
+.fs-100{
+    font-weight: 100;
+}
+.fs-200{
+    font-weight: 200;
+}
+.fs-400{
+    font-weight: 400;
+}
+.fs-500{
+    font-weight: 500;
+}
+.fs-700{
+    font-weight: 700;
+}
+.fs-900{
+    font-weight: 900;
+}
+
+.dropdown .dropdown-menu {
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-link:hover
+{
+    color: black!important;
+}
+
+/*.input-focus:focus {*/
+/*    outline: none !important;*/
+/*    box-shadow: none !important;*/
+/*}*/
+
+.input-search:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    /*border: 1px solid black !important; !* Sets the border to black on focus *!*/
+    border: 1px solid rgba(173, 167, 167, 0.82) !important; /* Sets the border to black on focus */
+}
+
+input{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+textarea{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.img-border
+{
+    height: 750px;
+    background-image: url("https://www.superkababandcoffee.com//website/img/2nd_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.order-border
+{
+    border: 2px solid #aa4723;
+    font-size: 14px;
+}
+
+.btn-border
+{
+    border: 2px solid #373737;
+    font-size: 14px;
+}
+
+.bg-green
+{
+    background-color: #373737!important;
+}
+
+.bg-color
+{
+    background-color: #aa4723!important;
+}
+
+.text-color
+{
+  color: #312b2b;
+
+}
+
+/*Pagination*/
+
+.active>.page-link, .page-link.active {
+    z-index: 100 !important;
+    color: white !important;
+    background-color: #212529 !important;
+    border-color: #212529 !important;
+}
+
+/*Offer Name Start*/
+
+.offer-ribbon {
+    position: relative;
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #fff; /* White text color */
+    font-weight: bold;
+    background-color: #ff6600; /* Orange background for the ribbon */
+    padding: 0 10px;
+    border-radius: 5px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.offer-ribbon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #ff3300; /* Darker shade for the ribbon tip */
+    border-right: 20px solid transparent;
+}
+
+.offer-ribbon::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #ff3300; /* Darker shade for the ribbon tip */
+    border-left: 20px solid transparent;
+}
+
+/*Offer Name End*/
+
+.banner
+{
+    height: 700px;
+    width: 100%;
+    background-image: url("https://www.superkababandcoffee.com//website/img/izakaya_all_1024x1024.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.nav-hover
+{
+    position: relative;
+}
+
+.nav-hover:hover
+{
+
+}
+
+.nav-hover::after
+{
+    content: "";
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    width: 85%;
+    height: 2px;
+    background-color: #AA4723;
+}
+
+.nav-hover:hover::after
+{
+     opacity: 1;
+ }
+
+/*Home Page Hero Section*/
+/*dots*/
+.carousel-indicators{
+    margin-bottom: -10px !important;
+    padding: 0 !important;
+}
+.carousel-indicators button.carousel-dots {
+    height: 5px !important;
+    width: 100px !important;
+    border-radius: 0 !important;
+    background-color: #e7e6e6; /* Set default inactive color */
+}
+
+.carousel-indicators button.carousel-dots.active {
+    background-color: #F8C243 !important; /* Set active color */
+}
+
+
+/*color*/
+.preview{
+    background: #ccc;
+}
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 25px;
+    height: 25px;
+    margin: 5px 0 5px 5px;
+    background-size: 225px 70px;
+    position: relative;
+    float: left;
+    display: inline;
+    top: 0;
+    border-radius: 3px;
+    z-index: 99999;
+    cursor: pointer;
+    box-border: 2px solid #000000;
+}
+
+input[type='radio']:hover{
+    -webkit-filter: opacity(.4);
+    filter: opacity(.4);
+}
+
+.red{
+    background: red;
+}
+
+.red:checked{
+    background: linear-gradient(brown, red)
+}
+
+.green{
+    background: green;
+}
+
+.green:checked{
+    background: linear-gradient(green, lime);
+}
+
+.yellow{
+    background: yellow;
+}
+
+.yellow:checked{
+    background: linear-gradient(orange, yellow);
+}
+
+.purple{
+    background: purple;
+}
+
+.purple:checked{
+    border-box: 1px solid #000;
+}
+
+.label{
+    width: 150px;
+    height: 75px;
+    position: absolute;
+    top: 170px;
+    margin-left: 130px;
+}
+
+::selection{
+    background: #003fe1;
+    color: white;
+}
+
+
+
+
+
