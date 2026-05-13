@@ -19,7 +19,7 @@ return new class extends Migration
                 $table->text('meta_description');
                 $table->text('image');
                 $table->string('alt');
-                $table->text('title')->unique();
+                $table->string('title')->unique();
                 $table->text('short_description');
                 $table->longText('description');
                 $table->text('slug');

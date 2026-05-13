@@ -21,7 +21,7 @@ return new class extends Migration
                 $table->foreignId('offer_id')->nullable();
                 $table->text('meta_title')->nullable();
                 $table->longText('meta_description')->nullable();
-                $table->text('name')->unique()->nullable();
+                $table->string('name')->unique()->nullable();
                 $table->text('image')->nullable();
                 $table->string('alt')->nullable();
                 $table->integer('stock')->nullable();
@@ -29,7 +29,7 @@ return new class extends Migration
                 $table->integer('selling_price')->nullable();
                 $table->string('discount')->nullable();
                 $table->longText('description')->nullable();
-                $table->text('product_slug')->unique()->nullable();
+                $table->string('product_slug')->unique()->nullable();
                 $table->string('status')->default('active');
                 $table->string('popular_status')->default('inActive');
                 $table->string('related_status')->default('inActive');
