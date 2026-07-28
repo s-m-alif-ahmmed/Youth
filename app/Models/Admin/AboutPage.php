@@ -10,6 +10,8 @@ class AboutPage extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
     private static $about_page, $about_pages;
 
     public static function createAboutPage($request)
@@ -35,16 +37,6 @@ class AboutPage extends Model
             abort(404);
         }
     }
-
-//    public static function deleteAboutPage($id)
-//    {
-//        try {
-//            self::$about_page = AboutPage::find($id);
-//            self::$about_page->delete();
-//        } catch (ModelNotFoundException $e) {
-//            abort(404);
-//        }
-//    }
 
     private static function saveBasicInfo($about_page, $request)
     {

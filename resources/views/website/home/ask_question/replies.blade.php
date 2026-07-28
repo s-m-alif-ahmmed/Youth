@@ -1,5 +1,6 @@
 <div class="col-12">
-    @foreach ($comments->where('parent_id') as $comment)
+    @if($comments && count($comments) > 0)
+        @foreach ($comments as $comment)
 
         <div class="media mb-4 pt-5 overflow-visible" data-comment-id="{{ $comment->id }}">
 
@@ -75,6 +76,7 @@
         </div>
 
     @endforeach
+    @endif
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

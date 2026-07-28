@@ -11,6 +11,8 @@ class ProductReview extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
     private static $product_review, $product_reviews;
 
     public static function createProductReview($request)

@@ -12,6 +12,8 @@ class Comment extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
     private static $comment, $comments;
 
     public static function createComment($request)
@@ -25,18 +27,6 @@ class Comment extends Model
             abort(404);
         }
     }
-
-//    public static function updateComment($request, $id)
-//    {
-//        try {
-//            self::$comment = Comment::find($id);
-//            self::saveBasicInfo(self::$comment, $request);
-//            self::$comment->save();
-//            return self::$comment;
-//        } catch (ModelNotFoundException $e) {
-//            abort(404);
-//        }
-//    }
 
     public static function deleteComment($id)
     {
@@ -71,6 +61,11 @@ class Comment extends Model
     public function parent()
     {
         return $this->belongsTo(Comment::class, 'parent_id');
+    }
+
+    public function replies()
+    {
+        return $this->hasMany(Comment::class, 'parent_id');
     }
 
 }

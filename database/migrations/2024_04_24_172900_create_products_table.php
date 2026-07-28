@@ -19,6 +19,7 @@ return new class extends Migration
                 $table->foreignId('product_sub_category_id')->nullable();
                 $table->foreignId('product_brand_id')->nullable();
                 $table->foreignId('offer_id')->nullable();
+                $table->foreignId('event_id')->nullable();
                 $table->text('meta_title')->nullable();
                 $table->longText('meta_description')->nullable();
                 $table->string('name')->unique()->nullable();

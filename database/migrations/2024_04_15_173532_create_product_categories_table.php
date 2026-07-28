@@ -22,6 +22,7 @@ return new class extends Migration
                 $table->string('page_alt')->nullable();
                 $table->text('product_category_slug')->nullable();
                 $table->string('status')->default('active');
+                $table->string('filter_status')->default('inActive');
                 $table->timestamps();
             });
         }

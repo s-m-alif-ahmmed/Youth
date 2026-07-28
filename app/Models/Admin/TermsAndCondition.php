@@ -10,6 +10,8 @@ class TermsAndCondition extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
     private static $terms_and_condition, $terms_and_conditions;
 
     public static function createTermsAndCondition($request)
@@ -34,16 +36,6 @@ class TermsAndCondition extends Model
             return view('admin.error.error');
         }
     }
-
-//    public static function deleteTermsAndCondition($id)
-//    {
-//        try {
-//            self::$terms_and_condition = TermsAndCondition::find($id);
-//            self::$terms_and_condition->delete();
-//        } catch (ModelNotFoundException $e) {
-//            return view('admin.error.error');
-//        }
-//    }
 
     private static function saveBasicInfo($terms_and_condition, $request)
     {

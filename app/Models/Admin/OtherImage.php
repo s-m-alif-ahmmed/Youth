@@ -9,6 +9,7 @@ class OtherImage extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
 
     private static $otherImage, $otherImages, $image, $imageName, $directory, $imageUrl, $extension;
 

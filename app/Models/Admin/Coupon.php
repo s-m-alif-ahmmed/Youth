@@ -10,6 +10,8 @@ class Coupon extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
     private static $coupon, $coupons;
 
     public static function createCoupon($request)

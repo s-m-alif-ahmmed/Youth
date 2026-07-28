@@ -10,6 +10,8 @@ class PrivacyPolicy extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
     private static $privacy_policy, $privacy_policies;
 
     public static function createPrivacyPolicy($request)

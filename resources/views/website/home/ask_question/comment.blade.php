@@ -70,7 +70,7 @@
                     </div>
                 </form>
 
-            @include('website.comment.replies', ['comments' => $comment->replies])
+            @include('website.home.ask_question.replies', ['comments' => $comment->replies])
 
             </div>
         </div>

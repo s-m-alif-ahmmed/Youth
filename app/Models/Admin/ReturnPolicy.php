@@ -10,6 +10,8 @@ class ReturnPolicy extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
     private static $return_policy, $return_policies;
 
     public static function createReturnPolicy($request)
